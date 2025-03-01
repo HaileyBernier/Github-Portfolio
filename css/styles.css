@@ -57,10 +57,11 @@ img {
 .hero-text-box {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  align-self: top;
+  align-self: center;
   text-align: center;
   padding: 1rem;
   z-index: 10;
+  margin-top: 10px;
 }
 
 .hero-heading {
