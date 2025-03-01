@@ -61,7 +61,6 @@ img {
   text-align: center;
   padding: 1rem;
   z-index: 10;
-  margin-top: 10px;
 }
 
 .hero-heading {
@@ -70,9 +69,12 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   color: white;
+  margin-top: -800px;
+  text-align: center;
 }
 
 .hero-text {
+  text-align: center;
   font-size: 1rem;
   margin-top: 0.5rem;
   color: white;
