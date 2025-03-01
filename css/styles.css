@@ -57,7 +57,7 @@ img {
 .hero-text-box {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  align-self: center;
+  align-self: top;
   text-align: center;
   padding: 1rem;
   z-index: 10;
