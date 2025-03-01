@@ -69,7 +69,7 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   color: white;
-  margin-top: -800px;
+  margin-top: -600px;
   text-align: center;
 }
 
@@ -78,4 +78,17 @@ img {
   font-size: 1rem;
   margin-top: 0.5rem;
   color: white;
+}
+
+/* Add Media Queries for Large Screens */
+
+@media (min-width: 600px) {
+  .hero-heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .hero-text {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
