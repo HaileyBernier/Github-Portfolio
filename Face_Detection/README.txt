@@ -1,16 +1,16 @@
-Face Detection Project
+##Face Detection Project
 
-Overview
+##Overview
 
 This project implements a basic face detection system using numerical facial feature data. It finds the closest matching face from a dataset using Euclidean distance.
 
-Files Included
+##Files Included
 
 face_detection.py: Python script that reads facial data, computes Euclidean distances, and finds the closest matching face.
 
 face_data.csv: Dataset containing numerical facial feature vectors.
 
-How It Works
+##How It Works
 
 The script loads the face_data.csv file.
 
@@ -20,21 +20,21 @@ The Euclidean distance between the target face and all dataset entries is comput
 
 The closest face (minimum distance) is identified and displayed.
 
-Requirements
+##Requirements
 
 Python 3.x
 
-Required libraries:
+##Required libraries:
 
 pip install pandas scikit-learn
 
 Running the Script
 
-To run the face detection script:
+##To run the face detection script:
 
 python face_detection.py
 
-Future Enhancements
+##Future Enhancements
 
 Implement additional distance metrics (Cosine Similarity, Manhattan Distance).
 
@@ -46,7 +46,7 @@ Integrate a machine learning model for improved face classification.
 
 Build a web interface using Flask or Streamlit.
 
-Author
+##Author
 
 Hailey Bernier
 
