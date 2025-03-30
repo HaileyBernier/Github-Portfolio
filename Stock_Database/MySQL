@@ -78,4 +78,3 @@ ON DUPLICATE KEY UPDATE -- updatin data that is being entered so there are no du
     Low_Price = new_data.Low_Price,
     Market_Capitalization = new_data.Market_Capitalization;
     
-
