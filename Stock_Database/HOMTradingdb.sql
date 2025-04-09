@@ -59,33 +59,3 @@ CREATE TABLE Transactions (
     FOREIGN KEY (Stock_ID) REFERENCES Stocks(Stock_ID) ON DELETE CASCADE
 );
 
-INSERT INTO Users (Full_Name, Username, Email, Password, Role) -- inserting user information 
-VALUES 
-('Hailey Bernier', 'hbern1', 'hbern1@email.com', 'Password01', 'Admin'),
-('Jane Doe', 'JaDo', 'jane@email.com', 'Password02', 'Customer'); 
-
-
-INSERT INTO Stocks (Company_Name, Stock_Ticker, Volume, Initial_Price, High_Price, Low_Price, Market_Capitalization) -- inserting stock information 
-VALUES
-('Apple', 'AAPL', 1000, 149.11, 200.20, 100.12, 300000000000),
-('Google', 'GOOG', 500, 2800.33, 3000.12, 2000.29, 200000000000),
-('Tesla', 'TSLA', 300, 702.45, 800.44, 650.50, 100000000000)
-AS new_data
-ON DUPLICATE KEY UPDATE -- updatin data that is being entered so there are no duplicates 
-	Company_Name = new_data.Company_Name,
-    Volume = new_data.Volume,
-    Initial_Price = new_data.Initial_Price,
-    High_Price = new_data.High_Price,
-    Low_Price = new_data.Low_Price,
-    Market_Capitalization = new_data.Market_Capitalization;
-
--- Insert Cash Account with valid User_ID
-INSERT INTO Cash_Account (User_ID, Balance) 
-VALUES (1, 10000);
-
--- Insert Portfolio with valid User_ID and Stock_ID
-INSERT INTO Portfolio (User_ID, Stock_ID, Quantity, Total_Value) 
-VALUES (1, 1, 20, 100000);
-
-
-
